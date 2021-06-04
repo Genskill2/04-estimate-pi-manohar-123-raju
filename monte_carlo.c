@@ -27,8 +27,8 @@ float mc_pi(int n){
 int main(void) {
   float pi0;
   float pi1; 
-  pi0 = mc_pi(250000);
-  pi1 = mc_pi(250000);
+  pi0 = mc_pi(25000000);
+  pi1 = mc_pi(25000000);
   printf("%f %f\n", pi0, pi1);
   
   if (pi0 == pi1) {
