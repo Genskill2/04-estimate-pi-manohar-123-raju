@@ -12,17 +12,15 @@ float frandom() {
   
 float mc_pi(int n){
    int a = 0;
-   float c;
    for( int i = 0 ; i < n; i++){
     float x = frandom();
     float y = frandom();
     float d = x*x+y*y-x-y+0.25;
-    if(d < 0){
+    if(d <= 0){
      a++;
     }
    }
-   c = a/n
-   float pi = 4*c;
+   float pi = 4*(float)a/n;
    return pi;
 } 
 
