@@ -3,8 +3,6 @@
 #include <stdio.h>
 #include <math.h>
 
-
-
 float frandom() {
   long int q = random();
   float ret = (float)q/(float)RAND_MAX;
@@ -30,8 +28,8 @@ int main(void) {
   float pi0;
   float pi1;
   
-  pi0 = mc_pi(25000);
-  pi1 = mc_pi(25000);
+  pi0 = mc_pi(250000);
+  pi1 = mc_pi(250000);
   printf("%f %f\n", pi0, pi1);
   
   if (pi0 == pi1) {
