@@ -14,8 +14,8 @@ float mc_pi(int n){
   for( int i = 0 ; i < n; i++){
    float x = frandom();
    float y = frandom();
-   float d = x*x+y*y;
-   if(d <= 1){
+   float d = x*x+y*y-x-y+0.25;
+   if(d <= 0){
     incircle++;
    }
   }
